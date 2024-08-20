@@ -1,0 +1,197 @@
+body{
+    font-family:"poppins",sans-serif;
+    background-image: url("top-view-different-paper-sheets.jpg");
+    background-size: cover;
+}
+
+nav
+{
+background-color: rgb(156, 168, 177);
+width: 100%;
+top: 0;
+position: fixed;
+left: 0;
+z-index: 99;
+}
+.nav-bar
+{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.fa-brands
+{
+    font-size: 70px;
+}
+
+nav .logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(78, 36, 116);
+    transition: 0.3s;
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    outline: 0;
+    font-weight: 600;
+}
+nav .logo a:hover 
+{
+    color: var(--extra-light);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+
+}
+
+ul li a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+ul li a:hover 
+{
+    border-top-color:rgb(43, 27, 222);
+    border-bottom-color:rgb(43, 27, 222);
+    color: var(--extra-light);
+}
+.section
+{
+    background-color: var(--extra-light);
+}
+
+.sect-contentainer
+{
+    min-height: 80vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+gap: 2rem;
+}
+
+.content 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+ 
+
+.title2 span
+{
+    font-weight: 600;
+}
+
+.details
+{
+    line-height: 1.2rem;
+    color: var(--extra-light);
+    margin-bottom: 2rem;
+}
+.btn
+{
+    display: flex;
+    gap: 1.5rem;
+}
+.btn button
+{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid var(--extra-light);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn button:hover
+{
+    background-color: rgb(46, 84, 118);
+}
+
+.image
+{
+    display: grid;
+    place-items: center;
+}
+.image img{
+    width: min(25rem,90%);
+    border-radius: 100%;
+}
+
+@media(width < 750px)
+{
+    nav .checkbox{
+        display: block;
+    }
+
+    ul{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh-85px);
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    nav #check:checked ~ ul 
+    {
+        left: 0;
+
+    }
+    ul li a 
+    {
+        font-size: 1.3rem;
+    }
+
+    .sect-contentainer
+    {
+        padding: 10rem 1rem 5rem 1 rem;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .image
+    {
+        grid-area: 5/5/8/8;
+    }
+    
+}
+.content h1
+{
+    font-size: 80px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 5rem;
+}
+.content h3{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2.5rem;
+}
+.content p{
+    font-size: 20px;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
