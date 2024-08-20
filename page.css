@@ -1,0 +1,346 @@
+ :root {
+   color: rgb(3, 72, 85);
+
+ }
+
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ input::placeholder {
+   color: rgb(6, 37, 34);
+ }
+
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+   min-height: 100vh;
+   
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+.page{
+  background-image: url("boat.jpg");
+  background-size: cover;
+   
+}
+ nav {
+   position: absolute;
+   top: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100%;
+   padding: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+ }
+
+ .logo a {
+   font-size: 50px;
+   font-weight: 600;
+   color: rgb(8, 35, 35);
+ }
+
+ .link {
+
+   max-width: 1100px;
+   margin: auto;
+   font-size:2rem;
+   margin-right: 50px;
+ }
+
+ ul {
+   list-style-type: none;
+   float: right;
+   margin-top: 25px;
+   justify-content: space-evenly;
+   font-size: 20px;
+ }
+
+ ul li {
+   display: inline-block;
+   border: 1px solid transparent;
+ }
+
+ ul li a {
+   color: rgb(5, 46, 55);
+   text-decoration: none;
+   padding: 5px;
+   font-size: 30px;
+ }
+
+ ul li a:hover {
+   background-color: rgb(158, 204, 206);
+   color: black;
+   transition: 0.5s;
+
+ }
+
+.nav-search{
+  margin-top: 30px;
+  
+  
+}
+ .nav-search {
+   margin-top: 0px;
+   display: flex;
+   justify-content: space-evenly;
+   background-color: pink;
+   width: 650px;
+   height: 50px;
+   border-radius: 3px;
+   margin-left: 50px;
+   
+ }
+
+ .search-select {
+   background-color: #f3f3f3;
+   width: 80px;
+   text-align: center;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   border: none;
+   font-size: 20px;
+ }
+
+ .search-input {
+   width: 100%;
+   font-size: 1.5rem;
+   border: none;
+ }
+
+ .search-icon {
+   width: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   background-color: rgb(110, 207, 231);
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   color: #0f1111;
+ }
+
+ .nav-search:hover {
+   border: 2px solid rgb(4, 26, 35);
+ }
+
+ .container {
+   display: flex;
+   min-height: 100vh;
+   max-width: 50vh;
+   margin: auto;
+   padding-top: 100px;
+   position: relative;
+   margin-top: 10%;
+ }
+
+ .content h1 {
+   font-size: 4rem;
+   line-height: 3rem;
+   color: rgb(3, 37, 37);
+   font-weight: 600;
+   margin-top: 20px;
+ }
+
+ .content h1 {
+   color: rgb(8, 40, 40);
+   font-size: 70px;
+   display: flex;
+   justify-content: right;
+   text-align: center;
+   line-height: 4rem;
+ }
+
+  
+
+ button {
+   padding: 0.5rem 2rem;
+   font-size: 1.5rem;
+   background-color: rgb(137, 204, 209);
+   border-radius: 50px;
+   color: black;
+ }
+
+ button:hover {
+   background-color: rgb(238, 233, 227);
+ }
+
+ form {
+   width: 350px;
+   display: grid;
+   border-radius: 5px;
+   background-color: var(--extra-light);
+   color: var(--extra-light);
+   border-radius: 5px;
+ }
+
+ .form h1 {
+   font-size: 5rem;
+   font-weight: 600;
+   padding: 2rem;
+ }
+.form-group label
+{
+  color: #0f1111;
+  font-size: 20px;
+}
+ .form-group {
+   display: grid;
+   padding: 0.5rem;
+   margin-bottom: 1.5rem;
+ }
+
+ .form-group input {
+   padding: 0.5rem;
+   font-size: 1rem;
+   color: black;
+   background-color:rgb(219, 239, 240);
+   outline: none;
+   border-bottom: 2px solid var(--extra-light);
+ }
+
+ form button {
+   margin-top: 1rem;
+   padding: 1rem;
+   font-size: 1rem;
+   font-weight: 600;
+   outline: none;
+   background-color:rgb(199, 226, 228);
+   border-radius: 5px;
+   color: var(--extra-light);
+   cursor: pointer;
+ }
+
+
+ .foot-panel1
+{
+    background-color: #ecfbfb;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+ 
+}
+.foot-panel2
+{
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul
+{
+    margin-top: 20px;
+}
+ ul a
+ {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 15px;
+    color: #dddddd;
+ }
+
+ .foot-panel3
+ {
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .logo
+ {
+    background-image: url("amazon_logo.png");
+    height: 50px;
+width: 100px;
+background-size: cover;
+ }
+
+ .foot-panel4
+ {
+    background-color:#0f1111;
+    height: 100px;
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+ }
+
+ .page
+ {
+    padding-top: 25px;
+    margin-top: 40px;
+ }
+
+ .copy-right
+ {
+    padding-top:5px ;
+ }
+
+ .linklist
+ {
+  max-width:1100px; 
+   margin: auto;
+   font-size: 2rem;
+   /* margin-left: 60px; */
+   height: 60px;
+   
+   color: rgb(33, 3, 3);
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+ .linklist ul{
+  list-style-type: none;
+   float:inline-end;
+   margin-top: 25px;
+   justify-content: space-evenly;
+ }
+ .linklist ul li{
+  display: inline-block;
+   border: 1px solid transparent;
+ }
+ .linklist ul a{
+  color: rgb(5, 46, 55);
+   text-decoration: none;
+   padding: 5px;
+ }
+ .foot-panel
+ {
+  background-color: #c6c9cd;
+  color: rgb(24, 3, 3);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem; 
+  
+ }
+ .social-media ul li a{
+  font-size: 20px;
+display: flex;
+background-color: beige;
+ 
+ }
+ .social-media ul
+ {
+  margin-left: 80%;
+   
+ }
+ .social-media ul li a:hover{
+background-color: #80b9c4;
+ }
